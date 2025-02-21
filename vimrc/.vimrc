@@ -31,23 +31,6 @@ set wildmenu
 
 
 
-" TAG JUMPING:
-
-" Create the `tags` file (may need to install ctags first)
-command! MakeTags !ctags -R .
-
-" NOW WE CAN:
-" - Use ^] to jump to tag under cursor
-" - Use g^] for ambiguous tags
-" - Use ^t to jump back up the tag stack
-
-" THINGS TO CONSIDER:
-" - This doesn't help if you want a visual list of tags
-
-
-
-
-
 " AUTOCOMPLETE:
 
 " The good stuff is documented in |ins-completion|
