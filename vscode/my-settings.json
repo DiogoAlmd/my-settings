@@ -4,20 +4,19 @@
   "editor.linkedEditing": true,
   "security.workspace.trust.untrustedFiles": "open",
   "[python]": {
-      "editor.formatOnType": true
+    "editor.formatOnType": true
   },
   "editor.stickyScroll.enabled": false,
   "git.autofetch": true,
   "git.confirmSync": false,
   "[typescript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "redhat.telemetry.enabled": false,
-  "github.copilot.editor.enableAutoCompletions": true,
   "editor.fontSize": 16,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "[typescriptreact]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "diffEditor.ignoreTrimWhitespace": false,
   "workbench.startupEditor": "none",
@@ -25,19 +24,36 @@
   "editor.minimap.enabled": false,
   "terminal.integrated.env.osx": {},
   "[json]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "diffEditor.hideUnchangedRegions.enabled": true,
   "github.copilot.enable": {
-      "*": true,
-      "plaintext": false,
-      "markdown": false,
-      "scminput": false
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "typescript": true,
+    "typescriptreact": true
   },
-  // vim settings
+  "workbench.iconTheme": "symbols",
+  "workbench.externalBrowser": "chrome",
+  "[prisma]": {
+    "editor.formatOnSave": true
+  },
+  "chat.commandCenter.enabled": false,
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "breadcrumbs.enabled": false,
+  "window.title": "${activeEditorMedium}${separator}${rootName}${separator}${profileName}",
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": true,
   "vim.visualModeKeyBindingsNonRecursive": [
@@ -47,22 +63,28 @@
     }
   ],
   "vim.normalModeKeyBindings": [
-  {
-    // find the source definition instead of the .d.ts file
-    // 'f'ind the source 'd'efinition
-    "before": ["f", "d"],
-    "commands": ["typescript.goToSourceDefinition"]
-  },
-  {
-    // df is easier to hit than gd
-    // go to the 'd'e'f'inition
-    "before": ["d", "f"],
-    "after": ["g", "d"]
-  },
-  {
-    "before": ["d", "n"],
-    "after": ["d", "g", "_"]
-  }
-],
-"workbench.iconTheme": "symbols",
+    {
+      "before": ["f", "d"],
+      "commands": ["typescript.goToSourceDefinition"]
+    },
+    {
+      "before": ["d", "f"],
+      "after": ["g", "d"]
+    },
+    {
+      "before": ["d", "n"],
+      "after": ["d", "g", "_"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": [">"],
+      "after": [">", "g", "v"]
+    },
+    {
+      "before": ["<"],
+      "after": ["<", "g", "v"]
+    }
+  ],
+  "workbench.colorTheme": "Min Dark"
 }
