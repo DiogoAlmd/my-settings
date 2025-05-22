@@ -1,90 +1,84 @@
 {
-  "editor.suggestSelection": "first",
-  "files.autoSave": "afterDelay",
-  "editor.linkedEditing": true,
-  "security.workspace.trust.untrustedFiles": "open",
-  "[python]": {
-    "editor.formatOnType": true
-  },
-  "editor.stickyScroll.enabled": false,
-  "git.autofetch": true,
-  "git.confirmSync": false,
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "redhat.telemetry.enabled": false,
-  "editor.fontSize": 16,
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "diffEditor.ignoreTrimWhitespace": false,
-  "workbench.startupEditor": "none",
-  "workbench.preferredDarkColorTheme": "Visual Studio Dark",
-  "editor.minimap.enabled": false,
-  "terminal.integrated.env.osx": {},
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "diffEditor.hideUnchangedRegions.enabled": true,
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false,
-    "typescript": true,
-    "typescriptreact": true
-  },
-  "workbench.iconTheme": "symbols",
-  "workbench.externalBrowser": "chrome",
-  "[prisma]": {
-    "editor.formatOnSave": true
-  },
-  "chat.commandCenter.enabled": false,
-  "window.commandCenter": false,
-  "workbench.layoutControl.enabled": false,
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "breadcrumbs.enabled": false,
-  "window.title": "${activeEditorMedium}${separator}${rootName}${separator}${profileName}",
-  "vim.useSystemClipboard": true,
-  "vim.useCtrlKeys": true,
-  "vim.visualModeKeyBindingsNonRecursive": [
-    {
-      "before": ["p"],
-      "commands": ["editor.action.clipboardPasteAction"]
-    }
-  ],
-  "vim.normalModeKeyBindings": [
-    {
-      "before": ["f", "d"],
-      "commands": ["typescript.goToSourceDefinition"]
-    },
-    {
-      "before": ["d", "f"],
-      "after": ["g", "d"]
-    },
-    {
-      "before": ["d", "n"],
-      "after": ["d", "g", "_"]
-    }
-  ],
-  "vim.visualModeKeyBindings": [
-    {
-      "before": [">"],
-      "after": [">", "g", "v"]
-    },
-    {
-      "before": ["<"],
-      "after": ["<", "g", "v"]
-    }
-  ],
-  "workbench.colorTheme": "Min Dark"
+	"editor.suggestSelection": "first",
+	"files.autoSave": "afterDelay",
+	"editor.linkedEditing": true,
+	"security.workspace.trust.untrustedFiles": "open",
+	"[python]": {
+		"editor.formatOnType": true
+	},
+	"editor.stickyScroll.enabled": false,
+	"git.autofetch": true,
+	"git.confirmSync": false,
+	"redhat.telemetry.enabled": false,
+	"editor.fontSize": 16,
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"diffEditor.ignoreTrimWhitespace": false,
+	"workbench.startupEditor": "none",
+	"workbench.preferredDarkColorTheme": "Visual Studio Dark",
+	"editor.minimap.enabled": false,
+	"terminal.integrated.env.osx": {},
+	"diffEditor.hideUnchangedRegions.enabled": true,
+	"github.copilot.enable": {
+		"*": true,
+		"plaintext": false,
+		"markdown": false,
+		"scminput": false,
+		"typescript": true,
+		"typescriptreact": true
+	},
+	"workbench.iconTheme": "symbols",
+	"workbench.externalBrowser": "chrome",
+	"[prisma]": {
+		"editor.formatOnSave": true
+	},
+	"chat.commandCenter.enabled": false,
+	"window.commandCenter": false,
+	"workbench.layoutControl.enabled": false,
+	"[javascript]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[html]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"vim.useSystemClipboard": true,
+	"vim.useCtrlKeys": true,
+	"vim.visualModeKeyBindingsNonRecursive": [
+		{
+			"before": ["p"],
+			"commands": ["editor.action.clipboardPasteAction"]
+		}
+	],
+	"vim.normalModeKeyBindings": [
+		{
+			"before": ["f", "d"],
+			"commands": ["typescript.goToSourceDefinition"]
+		},
+		{
+			"before": ["d", "f"],
+			"after": ["g", "d"]
+		},
+		{
+			"before": ["d", "n"],
+			"after": ["d", "g", "_"]
+		}
+	],
+	"vim.visualModeKeyBindings": [
+		{
+			"before": [">"],
+			"after": [">", "g", "v"]
+		},
+		{
+			"before": ["<"],
+			"after": ["<", "g", "v"]
+		}
+	]
 }
