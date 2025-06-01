@@ -10,10 +10,13 @@
 	"git.autofetch": true,
 	"git.confirmSync": false,
 	"redhat.telemetry.enabled": false,
-	"editor.fontSize": 16,
+	"editor.fontSize": 14,
+	"editor.lineHeight": 1.8,
+	"editor.rulers": [80, 120],
+	"window.zoomLevel": 1,
 	"typescript.updateImportsOnFileMove.enabled": "always",
 	"diffEditor.ignoreTrimWhitespace": false,
-	"workbench.startupEditor": "none",
+	"workbench.startupEditor": "newUntitledFile",
 	"workbench.preferredDarkColorTheme": "Visual Studio Dark",
 	"editor.minimap.enabled": false,
 	"terminal.integrated.env.osx": {},
@@ -49,6 +52,15 @@
 	"[jsonc]": {
 		"editor.defaultFormatter": "biomejs.biome"
 	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"explorer.compactFolders": false,
+	"editor.renderLineHighlight": "gutter",
+	"editor.semanticHighlighting.enabled": false,
+	"workbench.activityBar.location": "hidden",
+	"window.titleBarStyle": "native",
+	"breadcrumbs.enabled": false,
 	"vim.useSystemClipboard": true,
 	"vim.useCtrlKeys": true,
 	"vim.visualModeKeyBindingsNonRecursive": [
@@ -80,5 +92,6 @@
 			"before": ["<"],
 			"after": ["<", "g", "v"]
 		}
-	]
+	],
+	"workbench.colorTheme": "poimandres"
 }
