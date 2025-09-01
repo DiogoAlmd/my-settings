@@ -11,15 +11,10 @@
 	"git.confirmSync": false,
 	"redhat.telemetry.enabled": false,
 	"editor.fontSize": 14,
-	"editor.lineHeight": 1.8,
-	"editor.rulers": [80, 120],
-	"window.zoomLevel": 1,
 	"typescript.updateImportsOnFileMove.enabled": "always",
 	"diffEditor.ignoreTrimWhitespace": false,
-	"workbench.startupEditor": "newUntitledFile",
 	"workbench.preferredDarkColorTheme": "Visual Studio Dark",
 	"editor.minimap.enabled": false,
-	"terminal.integrated.env.osx": {},
 	"diffEditor.hideUnchangedRegions.enabled": true,
 	"github.copilot.enable": {
 		"*": true,
@@ -27,7 +22,8 @@
 		"markdown": false,
 		"scminput": false,
 		"typescript": true,
-		"typescriptreact": true
+		"typescriptreact": true,
+		"python": true
 	},
 	"workbench.iconTheme": "symbols",
 	"workbench.externalBrowser": "chrome",
@@ -58,9 +54,9 @@
 	"explorer.compactFolders": false,
 	"editor.renderLineHighlight": "gutter",
 	"editor.semanticHighlighting.enabled": false,
-	"workbench.activityBar.location": "hidden",
-	"window.titleBarStyle": "native",
-	"breadcrumbs.enabled": false,
+	"workbench.tree.enableStickyScroll": false,
+	"github.copilot.nextEditSuggestions.enabled": true,
+	"workbench.secondarySideBar.defaultVisibility": "hidden",
 	"vim.useSystemClipboard": true,
 	"vim.useCtrlKeys": true,
 	"vim.visualModeKeyBindingsNonRecursive": [
@@ -71,16 +67,8 @@
 	],
 	"vim.normalModeKeyBindings": [
 		{
-			"before": ["f", "d"],
-			"commands": ["typescript.goToSourceDefinition"]
-		},
-		{
 			"before": ["d", "f"],
 			"after": ["g", "d"]
-		},
-		{
-			"before": ["d", "n"],
-			"after": ["d", "g", "_"]
 		}
 	],
 	"vim.visualModeKeyBindings": [
@@ -92,6 +80,5 @@
 			"before": ["<"],
 			"after": ["<", "g", "v"]
 		}
-	],
-	"workbench.colorTheme": "poimandres"
+	]
 }
