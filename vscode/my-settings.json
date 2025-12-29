@@ -1,11 +1,8 @@
 {
 	"editor.suggestSelection": "first",
-	"files.autoSave": "afterDelay",
+	"editor.formatOnSave": true,
 	"editor.linkedEditing": true,
 	"security.workspace.trust.untrustedFiles": "open",
-	"[python]": {
-		"editor.formatOnType": true
-	},
 	"editor.stickyScroll.enabled": false,
 	"git.autofetch": true,
 	"git.confirmSync": false,
@@ -16,6 +13,10 @@
 	"workbench.preferredDarkColorTheme": "Visual Studio Dark",
 	"editor.minimap.enabled": false,
 	"diffEditor.hideUnchangedRegions.enabled": true,
+	"editor.codeActionsOnSave": {
+		"source.organizeImports.biome": "explicit",
+		"source.fixAll.biome": "explicit"
+	},
 	"github.copilot.enable": {
 		"*": true,
 		"plaintext": false,
@@ -30,9 +31,6 @@
 	"[prisma]": {
 		"editor.formatOnSave": true
 	},
-	"chat.commandCenter.enabled": false,
-	"window.commandCenter": false,
-	"workbench.layoutControl.enabled": false,
 	"[javascript]": {
 		"editor.defaultFormatter": "biomejs.biome"
 	},
@@ -55,7 +53,7 @@
 	"editor.renderLineHighlight": "gutter",
 	"editor.semanticHighlighting.enabled": false,
 	"workbench.tree.enableStickyScroll": false,
-	"github.copilot.nextEditSuggestions.enabled": true,
+	"github.copilot.nextEditSuggestions.enabled": false,
 	"workbench.secondarySideBar.defaultVisibility": "hidden",
 	"vim.useSystemClipboard": true,
 	"vim.useCtrlKeys": true,
@@ -80,5 +78,11 @@
 			"before": ["<"],
 			"after": ["<", "g", "v"]
 		}
-	]
+	],
+	"chat.commandCenter.enabled": false,
+	"workbench.navigationControl.enabled": false,
+	"gitlens.ai.model": "vscode",
+	"gitlens.ai.vscode.model": "copilot:gpt-4.1",
+	"terminal.integrated.suggest.enabled": true,
+	"claudeCode.preferredLocation": "panel"
 }
