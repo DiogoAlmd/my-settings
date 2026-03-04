@@ -7,10 +7,22 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+	"ssh_connections": [
+		{
+			"host": "191.242.226.118",
+			"args": [],
+			"projects": [
+				{
+					"paths": ["/home/dev/repos/multi-archs-defect-detection"]
+				}
+			]
+		}
+	],
 	"session": {
 		"trust_all_worktrees": true
 	},
 	"project_panel": {
+		"dock": "left",
 		"auto_fold_dirs": false
 	},
 	"base_keymap": "VSCode",
@@ -42,15 +54,15 @@
 	},
 	"languages": {
 		"JavaScript": {
-			"language_servers": ["biome"],
+			"language_servers": ["typescript-language-server", "biome"],
 			"formatter": "language_server"
 		},
 		"TypeScript": {
-			"language_servers": ["biome"],
+			"language_servers": ["typescript-language-server", "biome"],
 			"formatter": "language_server"
 		},
 		"TSX": {
-			"language_servers": ["biome"],
+			"language_servers": ["typescript-language-server", "biome"],
 			"formatter": "language_server"
 		},
 		"JSON": {
