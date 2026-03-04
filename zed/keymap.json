@@ -1,0 +1,16 @@
+[
+	{
+		"context": "VimControl && !menu",
+		"bindings": {
+			"g d": "editor::GoToDefinition",
+			"f r": "editor::FindAllReferences"
+		}
+	},
+	{
+		"context": "vim_mode == visual",
+		"bindings": {
+			">": ["workspace::SendKeystrokes", "> g v"],
+			"<": ["workspace::SendKeystrokes", "< g v"]
+		}
+	}
+]
