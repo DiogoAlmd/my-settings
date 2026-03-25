@@ -1,88 +1,109 @@
 {
-	"editor.suggestSelection": "first",
-	"editor.formatOnSave": true,
-	"editor.linkedEditing": true,
-	"security.workspace.trust.untrustedFiles": "open",
-	"editor.stickyScroll.enabled": false,
-	"git.autofetch": true,
-	"git.confirmSync": false,
-	"redhat.telemetry.enabled": false,
-	"editor.fontSize": 14,
-	"typescript.updateImportsOnFileMove.enabled": "always",
-	"diffEditor.ignoreTrimWhitespace": false,
-	"workbench.preferredDarkColorTheme": "Visual Studio Dark",
-	"editor.minimap.enabled": false,
-	"diffEditor.hideUnchangedRegions.enabled": true,
-	"editor.codeActionsOnSave": {
-		"source.organizeImports.biome": "explicit",
-		"source.fixAll.biome": "explicit"
-	},
-	"github.copilot.enable": {
-		"*": true,
-		"plaintext": false,
-		"markdown": false,
-		"scminput": false,
-		"typescript": true,
-		"typescriptreact": true,
-		"python": true
-	},
-	"workbench.iconTheme": "symbols",
-	"workbench.externalBrowser": "chrome",
-	"[prisma]": {
-		"editor.formatOnSave": true
-	},
-	"[javascript]": {
-		"editor.defaultFormatter": "biomejs.biome"
-	},
-	"[typescript]": {
-		"editor.defaultFormatter": "biomejs.biome"
-	},
-	"[json]": {
-		"editor.defaultFormatter": "biomejs.biome"
-	},
-	"[html]": {
-		"editor.defaultFormatter": "biomejs.biome"
-	},
-	"[jsonc]": {
-		"editor.defaultFormatter": "biomejs.biome"
-	},
-	"[typescriptreact]": {
-		"editor.defaultFormatter": "biomejs.biome"
-	},
-	"explorer.compactFolders": false,
-	"editor.renderLineHighlight": "gutter",
-	"editor.semanticHighlighting.enabled": false,
-	"workbench.tree.enableStickyScroll": false,
-	"github.copilot.nextEditSuggestions.enabled": false,
-	"workbench.secondarySideBar.defaultVisibility": "hidden",
-	"vim.useSystemClipboard": true,
-	"vim.useCtrlKeys": true,
-	"vim.visualModeKeyBindingsNonRecursive": [
-		{
-			"before": ["p"],
-			"commands": ["editor.action.clipboardPasteAction"]
-		}
-	],
-	"vim.normalModeKeyBindings": [
-		{
-			"before": ["d", "f"],
-			"after": ["g", "d"]
-		}
-	],
-	"vim.visualModeKeyBindings": [
-		{
-			"before": [">"],
-			"after": [">", "g", "v"]
-		},
-		{
-			"before": ["<"],
-			"after": ["<", "g", "v"]
-		}
-	],
-	"chat.commandCenter.enabled": false,
-	"workbench.navigationControl.enabled": false,
-	"gitlens.ai.model": "vscode",
-	"gitlens.ai.vscode.model": "copilot:gpt-4.1",
-	"terminal.integrated.suggest.enabled": true,
-	"claudeCode.preferredLocation": "panel"
+  "editor.suggestSelection": "first",
+  "editor.formatOnSave": true,
+  "editor.linkedEditing": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.stickyScroll.enabled": false,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "editor.fontSize": 14,
+  "js/ts.updateImportsOnFileMove.enabled": "always",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "workbench.preferredDarkColorTheme": "Visual Studio Dark",
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports.biome": "explicit",
+    "source.fixAll.biome": "explicit"
+  },
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "typescript": true,
+    "typescriptreact": true,
+    "python": true
+  },
+  "workbench.externalBrowser": "chrome",
+  "[prisma]": {
+    "editor.formatOnSave": true
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true
+  },
+  "explorer.compactFolders": false,
+  "editor.renderLineHighlight": "gutter",
+  "editor.semanticHighlighting.enabled": false,
+  "workbench.tree.enableStickyScroll": false,
+  "github.copilot.nextEditSuggestions.enabled": false,
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "workbench.navigationControl.enabled": false,
+  "claudeCode.preferredLocation": "panel",
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["p"],
+      "commands": ["editor.action.clipboardPasteAction"]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["d", "f"],
+      "after": ["g", "d"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": [">"],
+      "after": [">", "g", "v"]
+    },
+    {
+      "before": ["<"],
+      "after": ["<", "g", "v"]
+    }
+  ],
+  "chat.viewSessions.orientation": "stacked",
+  "notebook.formatOnSave.enabled": true,
+  "json.schemaDownload.trustedDomains": {
+    "https://schemastore.azurewebsites.net/": true,
+    "https://raw.githubusercontent.com/": true,
+    "https://www.schemastore.org/": true,
+    "https://json.schemastore.org/": true,
+    "https://json-schema.org/": true,
+    "https://biomejs.dev": true
+  },
+  "python.defaultInterpreterPath": "/usr/bin/python3",
+  "claudeCode.selectedModel": "opus",
+  "editor.minimap.enabled": false,
+  "chat.instructionsFilesLocations": {
+    ".github/instructions": true,
+    ".claude/rules": true,
+    "~/.copilot/instructions": true,
+    "~/.claude/rules": true,
+    "~/.idl/vscode/github-copilot/instructions": true
+  },
+  "chat.promptFilesLocations": {
+    ".github/prompts": true,
+    "~/.idl/vscode/github-copilot/prompts": true
+  }
 }
